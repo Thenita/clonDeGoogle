@@ -5,7 +5,7 @@
 
 html{
     font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 header{
@@ -15,7 +15,7 @@ header{
 
 a{
     text-decoration: none;      /*le quita el subrayado al vinculo*/
-    cursor: pointer;            /*cambia el cursor cuando seencima de la etiqueta*/ /*pointer es una mano*/
+    cursor: pointer;            /*cambia el cursor cuando se pone encima de la etiqueta*/ /*pointer es una mano*/
 }
 
 header nav{
@@ -43,7 +43,7 @@ nav .nav-rigth-section .menu-icon{
     background-image:url(' https://static.thenounproject.com/png/756729-200.png');  /*background-image iserta una imagen*//*url la trae atraves de un link*/
     background-repeat: no-repeat;           /*aqui le indicamos que no se vaya a repetir la imagen*/
     background-position: center;
-    background-size:contain;                /*background-size determina el tamaño de la imagen*//*containexpande la imagen lo mas grande posible dentro de su contenedor*/
+    background-size:contain;                /*background-size determina el tamaño de la imagen*//*contain expande la imagen lo mas grande posible dentro de su contenedor*/
     width: 25px;
     height: 25px;
 }
@@ -51,4 +51,115 @@ nav .nav-rigth-section .menu-icon{
 nav .nav-rigth-section img{
     border-radius: 50%;            /*hace circular la imagen*/
     margin-left: 15px;
+}
+
+main{
+    margin-top: 0px;
+    text-align: center;         /*Centra todos los contenerdores dentro del main*/
+}
+
+/*logo*/
+main .main-logo{
+    width: 272px;
+    /* height: 92px; */
+    margin: 0 auto;         /*centra el contenedors sin modificar el tamaño*/
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    width: 272px;
+}
+
+/*Busqueda*/
+main .main-input{
+    width: 580px;
+    height: 44px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+    width: 575px;
+    height: 42px;
+    border-radius: 100px;              /* hace circular el contenedor */
+    border: 1px solid #e7e8eb;          /*genera un borde de tamaño de un px, solid es el estilo de border, color del borde*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 500px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover{           /*hover efectos*/
+    box-shadow: 0 1px 6px 0 #20212447; /*crea una sombra 0 mueve la sombra a la iquierda o derecha del contenedor, mueve la sombra arriba o abajo del contenedor, cuanto mayor sea el valor mayor sera la difuminación de la sombra, los valores positivos harán que la sombra se expanda*/
+    border-color: #dfe1e500;            /*le da color al borde*/
+}
+
+/*iconos de la caja de busqueda*/
+main .main-input-container .search-icon{
+    background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;       /*background-size determina el tamaño de la imagen*//*contain expande la imagen lo mas grande posible dentro de su contenedor*/
+    opacity: .35;
+    width: 23px;
+    height: 23px;
+    margin: 0 13px;
+}
+
+main .main-input-container .icon-voice{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin: 0 13px;
+    cursor: pointer;            /*cambia el cursor cuando se pone encima de la etiqueta*/ /*pointer es una mano*/
+}
+
+main .main-input-container .icon-photo{
+    background-image: url('https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+    margin-right: 13px;
+    margin-left: 7px;
+    cursor: pointer;            /*cambia el cursor cuando se pone encima de la etiqueta*/ /*pointer es una mano*/
+}
+
+/*Botones de bisqueda*/
+
+main .main-buttons{
+    width: 584px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    width: 153px;
+    height: 36px;
+    background-color: #f8f9fa;   /*color de fondo del boton*/
+    color: #3c4043;                 /*color de las palabras del boton*/
+    border: 0;                      /*quita la linea del borde*/
+    border-radius: 4px;
+    font-size: 1.4rem;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+main .main-buttons button:hover{
+    border: 1px solid #dadce0;
+    box-shadow: 1px 1px rgba(0, 0, 0, .1);
+    color: #202124;
 }
